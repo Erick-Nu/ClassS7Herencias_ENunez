@@ -1,0 +1,74 @@
+public class Tortuga extends Mascotas{
+    double peso;
+    double altura;
+    String name;
+
+    public Tortuga() {
+    }
+    public Tortuga(int numPatas, String raza, String group, double peso, double altura, String name) {
+        super(numPatas, raza, group);
+        this.peso = peso;
+        this.altura = altura;
+        this.name = name;
+    }
+    // Individual class dog
+    public Tortuga(double peso, double altura, String name) {
+        this.peso = peso;
+        this.altura = altura;
+        this.name = name;
+    }
+    // Individual class Pets
+    public Tortuga(int numPatas, String raza, String group){
+        super(numPatas, raza, group);
+    }
+    // getters
+
+    public double getPeso() {
+        return peso;
+    }
+
+    public double getAltura() {
+        return altura;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    // setters
+
+    public void setPeso(double peso) {
+        this.peso = peso;
+    }
+
+    public void setAltura(double altura) {
+        this.altura = altura;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+    // Metodo Personalizado
+    public void fichaMyturtle(){
+        System.out.println("--------------------------------");
+        System.out.println("  [FICHA TECNICA OF MY TURTLE ]  ");
+        System.out.println("Nombre: " + name);
+        System.out.println("Peso: " + peso + "kg");
+        System.out.println("Altura: " + altura + "cm");
+        System.out.println("--------------------------------");
+    }
+    public void fichaCompleta(){
+        System.out.println("-------------------------------");
+        System.out.println("  [FICHA TECNICA COMPLETA ]  ");
+        System.out.println("Nombre: " + name);
+        System.out.println("Peso: " + peso + "kg");
+        System.out.println("Altura: " + altura + "cm");
+        System.out.println("Raza: " + raza);
+        System.out.println("Grupo al que pertenece: " + group);
+        System.out.println("Numero de patas: " + numPatas);
+        System.out.println("-------------------------------");
+    }
+    public void grunir(){
+        System.out.println(" YOUR TURTLE GROAN ");
+    }
+}
